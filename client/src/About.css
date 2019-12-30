@@ -1,0 +1,87 @@
+.about-page{
+
+    height: 100vh;
+    width: 100vw;
+    margin: 0px auto;  
+    padding: 10px auto;
+    position: absolute;
+    background-image: url("./images/graduation.jpg"); 
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.about-text{
+    display: block;
+    width: 100%;
+    /* padding: 0px 0px; */
+    color: white;
+    font-size: 1.2em;
+}
+
+.about-title{
+    display: block;
+    width: 100%;
+    font-family: 'Contrail One', cursive;
+    font-size: 3em;
+    text-align: center;
+    /* padding: 5px 10px; */
+}
+
+.about-container{
+    margin: 100px auto;
+    position: relative;
+    padding: 30px 30px;
+    /* left: 15.5%; */
+    background-image:linear-gradient(to right, rgba(0,0,0,0.7), rgba(0,0,0,0.9));
+    width: 60vw;
+    /* border: 3px solid #51e80d; */
+}
+
+.about-title::after{
+    content: "";
+    display: table;
+}
+
+.profile_img{
+    object-fit: cover;
+    width: calc(60vw);
+    height: calc(60vw);
+    position: relative;
+}
+
+@media only screen and (min-width: 608px) {
+    .about-page{
+        height: 1280px;
+    }
+    .profile_img{
+        width: 400px;
+        height: 400px;
+        margin: 0px auto;
+    }
+
+    .about-container{
+        width: 400px;
+    }
+}
+
+@media only screen and (max-width: 608px) {
+    .profile_img{
+        all: unset;
+        object-fit: cover;
+        width: calc(60vw);
+        height: calc(60vw);
+        position: relative;
+        /* clear: none; */
+        /* margin: 10px auto; */
+        /* position: absolute; */
+    }
+
+    .about-container{
+        padding: 10px 10px;
+    }
+    .about-page{
+        height: 1024px;
+    }
+}
+

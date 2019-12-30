@@ -1,0 +1,116 @@
+.portfolio-page{
+    height: 100vh;
+    width: 100vw;
+    background-image: url("./images/computer2.jpg"); 
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    /* padding: 50px 50px; */
+    position: absolute;
+}
+
+.portfolio-title{
+    margin: 30px auto;
+    text-align: center;
+}
+
+.portfolio-container{
+    position: relative;
+    margin: 10px auto;
+    width: 60vw;
+    height: 70vh;
+    border: 8px double white;
+    padding: 20px 20px;
+    display: flex;
+    flex-direction: row;
+}
+
+.portfolio-image-container{
+    width: 50%;
+    height: 100%;
+    border: 1px solid white;
+    /* background-image: url("./images/mern.jpeg"); */
+}
+
+.portfolio-image{
+    width: calc(100%);
+    height: calc(100%);
+    object-fit: cover;
+    /* object-position: 10% 20%; */
+    margin: auto 0px;
+}
+
+.portfolio-text{
+    z-index: 99;
+    width: 50%;
+    height: calc(100%-20px);
+    border: 1px solid white;
+    padding: 20px 20px;
+    background-image:linear-gradient(to right, rgba(0,0,0,0.5), rgba(0,0,0,0.9));
+}
+
+.right-arrow-container{
+    float: right;
+    font-size: 5em;
+    position: absolute;
+    top: 50%;
+    right: calc(10%);
+    
+}
+
+.left-arrow-container{
+    float: left;
+    font-size: 5em;
+    position: absolute;
+    top: 50%;
+    left: calc(10%);
+    
+}
+
+.arrows{
+    /* background-image:linear-gradient(to right, rgba(0,0,0,0.5), rgba(0,0,0,0.9)); */
+    color: rgba(0,0,0,0.7);
+}
+.arrows-toggle{
+    color: rgba(255, 255, 255, 0.3);
+}
+
+
+
+.portfolio-arrows{
+    width: calc(100vw);
+    height: calc(100vh);
+    position: absolute;
+    top: 0px;
+
+}
+
+a {
+    color: white;
+}
+
+
+
+@media only screen and (max-width: 987px) {
+    .portfolio-container{
+        flex-direction: column;
+    }
+
+    .portfolio-image-container{
+        width: 100%;
+    }
+
+    .portfolio-text{
+        width: calc(100% - 40px);
+        /* z-index: 20; */
+        /* height: 100%; */
+    }
+    .right-arrow-container{
+        right: calc(5%);
+        font-size: 4em;
+    }
+    .left-arrow-container{
+        left: calc(5%);
+        font-size: 4em;
+    }
+}

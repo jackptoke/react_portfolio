@@ -1,0 +1,82 @@
+.page{
+    height: 100vh;
+    /* padding: 10px; */
+    width: 100vw;
+    margin: auto;  
+    background-image: url("./images/jack-portrait-center.jpg"); 
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  
+  .page__name{
+    display: block;
+    font-size: 3rem;
+    font-weight: 700;
+  }
+  
+  .page__hint{
+    display: block;
+    line-height: 1.45;
+    margin-top: 1rem;
+  }
+
+  .hero-text {
+    width: 25%;
+    text-align: right;
+    position: absolute;
+    /* top: 55%; */
+    bottom: 15%;
+    left: 15%;
+    transform: translate(-35%, 30%);
+    color: white;
+    
+  }
+
+  .hero-text2 {
+    width: 25%;
+    text-align: left;
+    position: absolute;
+    bottom: 15%;
+    right: 2%;
+    transform: translate(-35%, 30%);
+    color: white;
+  }
+  
+.hero-text3 {
+    width: 40%;
+    /* transform: translate(-35%, 30%); */
+    display: none;
+    margin: auto auto;
+    color: white;
+    position: absolute;
+    bottom: 70px;
+    left: 10%;
+    text-align: center;
+    background-image:linear-gradient(to right, rgba(0,0,0,0.5), rgba(0,0,0,0.5));
+}
+
+.green-text{
+    color: #51e80d;
+    /* display: inline; */
+}
+
+.display-font{
+  font-family: 'Contrail One', cursive;
+  font-size: 4em;
+}
+
+@media only screen and (max-width: 768px) {
+    .hero-text3{
+        width: 80%;
+        display: block;
+    }
+
+    .hero-text{
+        display: none;
+    }
+
+    .hero-text2{
+        display: none;
+    }
+}

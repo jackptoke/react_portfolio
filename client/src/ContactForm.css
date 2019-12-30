@@ -1,0 +1,42 @@
+.contacts-mailing{
+    margin: 10px auto auto auto;
+    /* bottom: 10px; */
+    padding: 10px 10px;
+    width: 60%;
+    font-family: "Open Sans";
+    background-image:linear-gradient(to right, rgba(0,0,0,0.5), rgba(0,0,0,0.8));
+}
+
+.subject-email{
+    width: calc(100% - 10px);
+    font-size: 1em;
+    margin-top: 5px;
+    /* margin-right: 5px; */
+    padding: 3px 3px;
+}
+
+.content-email{
+    width: calc(100% - 10px);
+    height: 120px;
+    font-size: 1em;
+    margin-top: 5px;
+    padding: 3px 3px;
+}
+
+.form-label{
+    font-size: 1.2em;
+    font-weight: bold;
+}
+
+.btn--submit{
+    font-size: 1.2em;
+    font-weight: bold;
+    margin-top: 10px;
+    background-color: #319c00;
+    color: white;
+    border: 1px solid black;
+}
+
+.error{
+    color: red;
+}
